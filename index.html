@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/animate.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main class="root">
+      <header class="header">
+        <p class="header__title">Coffee</p>
+
+        <nav class="navigation">
+          <ul>
+            <li class="navigation__link"><a href="#home">Home</a></li>
+            <li class="navigation__link"><a href="#about-us">About us</a></li>
+            <li class="navigation__link"><a href="#products">Products</a></li>
+            <li class="navigation__link"><a href="#reviews">Reviews</a></li>
+          </ul>
+
+          <div class="navigation__actions">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+
+      <section class="home" id="home">
+        <div class="home__content">
+          <h2>We have your coffee!</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
+            mauris vel dui feugiat tempus. Suspendisse in arcu a dui pretium
+            viverra. Donec sit amet aliquam tellus.
+          </p>
+        </div>
+        <div class="home__logo">
+          <img src="./assets/Home_Logo.png" alt="Home logo image" />
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <section class="about-us" id="about-us">
+        <h2 class="about-us__title">About us</h2>
+        <div class="about-us__content">
+          <div class="wow fadeInLeft about-us__item">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
+              mauris vel dui feugiat tempus.
+            </p>
+
+            <button class="btn">Buy now</button>
+
+            <img src="./assets/About_us_1.png" alt="Coffe home 1" />
+          </div>
+
+          <div class="wow bounceInUp about-us__item">
+            <img src="./assets/About_us_1.png" alt="Coffe home 1" />
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
+              mauris vel dui feugiat tempus. Suspendisse in arcu a dui pretium
+              viverra.Donec sit amet aliquam tellus.Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.Proin sed mauris vel dui feugiat
+              tempus. Suspendisse in arcu a dui pretium viverra.Donec sit amet
+              aliquam tellus.
+            </p>
+
+            <button class="btn btn-secondary">Read more</button>
+          </div>
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <section class="products" id="products">
+        <h2 class="products__title">Products</h2>
+
+        <p class="products__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <div class="products__customs">
+          <div class="products__card">
+            <img src="./assets/Products_1.png" alt="Products 1" />
+            <h4>Ceramic mugs</h4>
+            <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
+
+            <div class="products__actions">
+              <button class="btn">buy now</button>
+              <div>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <img src="./assets/Products_2.png" alt="Products 2" />
+            <h4>Ceramic mug</h4>
+            <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
+            <div class="products__actions">
+              <button class="btn">buy now</button>
+              <div>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <img src="./assets/Products_3.png" alt="Products 2" />
+            <h4>Coffee beans</h4>
+            <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
+
+            <div class="products__actions">
+              <button class="btn">buy now</button>
+              <div>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <img src="./assets/Products_2.png" alt="Products 2" />
+            <h4>Some other item</h4>
+            <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
+
+            <div class="products__actions">
+              <button class="btn">buy now</button>
+              <div>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <img src="./assets/Products_3.png" alt="Products 2" />
+            <h4>Last</h4>
+            <p>Lorem ipsum dolor sit consectetur adipiscing elit.</p>
+
+            <div class="products__actions">
+              <button class="btn">buy now</button>
+              <div>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/wow.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+      new WOW().init();
+
+      $(".products__customs").slick({
+        speed: 900,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1300,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+// colors
+
+$black: #000000;
+$white: #ffffff;
+$base-bg: #e9e7ea;
+$secondary-bg: #dbc5ba;
+$primary-font: #50382c;
+
+// sizes
+
+$primary-padding: 86px;
+
+$ui-xxs: 20px;
+$ui-xs: 24px;
+$ui-s: 36px;
+$ui-l: 48px;
+$ui-xl: 64px;
+
+// animations
+
+$transition: all 0.4s;
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  font-size: $ui-xs;
+  color: $primary-font;
+  font-family: "Anek Latin", sans-serif;
+}
+
+.root {
+  padding-top: 55px;
+  background-color: $base-bg;
+}
+
+.header {
+  top: 0;
+  z-index: 9;
+  height: 50px;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  position: -webkit-sticky;
+  background-color: $base-bg;
+  padding: 0 $primary-padding;
+  justify-content: space-between;
+
+  &__title {
+    font-size: $ui-s;
+  }
+}
+
+.navigation {
+  display: flex;
+  ul {
+    display: flex;
+    margin-right: 130px;
+  }
+
+  &__link {
+    margin-right: 62px;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: $primary-font;
+      text-decoration: none;
+      transition: $transition;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    :first-child {
+      margin-right: 30px;
+    }
+
+    i {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      transition: $transition;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 50%;
+      color: $primary-font;
+
+      &:hover {
+        background-color: darken($base-bg, 20%);
+      }
+    }
+  }
+}
+
+.home {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: calc(100vh - 105px);
+  justify-content: space-between;
+  padding-left: $primary-padding;
+
+  &__content {
+    flex-shrink: 0;
+    flex-basis: 40%;
+
+    h2 {
+      font-size: $ui-l;
+      font-weight: bold;
+      margin-bottom: 74px;
+    }
+  }
+
+  &__logo {
+    height: 100%;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+.line {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  opacity: 30%;
+  position: absolute;
+  background-color: $black;
+  box-shadow: 1px 2px 2px 0px rgb(0 0 0 / 30%);
+}
+
+.btn {
+  border: none;
+  height: 48px;
+  color: $white;
+  padding: 0 38px;
+  width: max-content;
+  text-transform: uppercase;
+  background-color: $primary-font;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-secondary {
+  color: $primary-font;
+  background-color: $white;
+  border: 1px solid $primary-font;
+}
+
+.about-us {
+  position: relative;
+  padding: 70px $primary-padding 0 $primary-padding;
+
+  &__title {
+    font-size: $ui-xl;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 46%;
+    flex-shrink: 0;
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    &:first-child {
+      button {
+        margin-bottom: 70px;
+      }
+
+      img {
+        width: 100%;
+        height: 820px;
+      }
+    }
+
+    &:last-child {
+      img {
+        width: 100%;
+        height: 720px;
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
+
+.products {
+  padding: 70px $primary-padding 155px $primary-padding;
+
+  &__title {
+    font-size: $ui-xl;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 85px;
+  }
+
+  &__card {
+    margin-right: 34px;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: $ui-s;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    margin-top: 45px;
+    justify-content: space-between;
+
+    div {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $primary-font;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
